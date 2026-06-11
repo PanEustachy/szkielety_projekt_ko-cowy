@@ -1,3 +1,33 @@
+aplikacja zarządzania postami blogowymi umożliwiająca przegląd dla 4 grup użytkowników:
+	-gość
+	-użytkownik zalogowany
+	-editor
+	-admin
+
+Gość: może przeglądać artykuły, zarejestrować się lub zalogować do serwisu.
+
+Użytkownik zalogowany: może się wylogować, preglądać artykuły i zostawić ocene artykułu
+
+edytor: może zrobić to co użytkownik zalogowany dodatkowo może dodać artykuł. edytować bądź usunąć artykuł który napisał
+
+admin: może zrobić to co edytor z tym że dla wszystkich artykułów.
+
+użyte technologie:
+	backend:
+		-Node.js
+		-Express.js
+		-Sequlize
+		-mysql
+		-bcrypt (hashowanie haseł)
+		-jsonwebtoken (JWT)
+		-cros
+		-express-validator
+	frontend:
+		-Vue 3
+		-Vite
+		
+
+
 instrukcja obsługi serwisu blogowego:
 włączyć serwer mysql na porcie 3306
 const DB_NAME = process.env.DB_NAME || 'blog_system';
@@ -5,6 +35,8 @@ const DB_USER = process.env.DB_USER || 'root';
 const DB_PASSWORD = process.env.DB_PASSWORD || '';
 const DB_HOST = process.env.DB_HOST || '127.0.0.1';
 const DB_PORT = process.env.DB_PORT || 3306;
+
+
 konfiguracja w backend/config/database.js
 	w folderze backend: 
 		npm install

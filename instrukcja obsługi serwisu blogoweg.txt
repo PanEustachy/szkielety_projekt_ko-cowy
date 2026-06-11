@@ -1,0 +1,9 @@
+instrukcja obsługi serwisu blogowego:
+	w folderze backend: 
+		npm install
+		npm run sync
+		npm run dev - aby uruchomić z nodemon
+	w folderze frontend
+		npm install
+		npm run dev - aby uruchomić z nodemon 
+frontend jest dostępny pod adresem http://localhost:5173/
